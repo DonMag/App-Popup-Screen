@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iJM-LH-fYp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <!--Walkthrough View Controller-->
         <scene sceneID="W0q-1V-crA">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughViewController" id="iJM-LH-fYp" customClass="WalkthroughViewController" customModule="Project_Enigma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughViewController" id="iJM-LH-fYp" customClass="WalkthroughViewController" customModule="WalkThrough" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mD1-Zn-1h5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,7 @@
         <!--Walkthrough Page View Controller-->
         <scene sceneID="Sd5-WK-fHK">
             <objects>
-                <pageViewController storyboardIdentifier="WalkthroughPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KF3-az-7PW" customClass="WalkthroughPageViewController" customModule="Project_Enigma" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="WalkthroughPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KF3-az-7PW" customClass="WalkthroughPageViewController" customModule="WalkThrough" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGG-9p-x2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="930" y="-46"/>
@@ -121,7 +121,7 @@
         <!--Walkthrough Buttons View Controller-->
         <scene sceneID="MHR-fE-8Bd">
             <objects>
-                <viewController storyboardIdentifier="ButtonsVC" id="c3W-Ay-TUG" customClass="WalkthroughButtonsViewController" customModule="Project_Enigma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ButtonsVC" id="c3W-Ay-TUG" customClass="WalkthroughButtonsViewController" customModule="WalkThrough" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4dd-C7-AWg">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ump-5k-PJz">
                                         <rect key="frame" x="0.0" y="0.0" width="179" height="93"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iq-D7-NgL" customClass="CustomButton" customModule="Project_Enigma" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iq-D7-NgL" customClass="CustomButton" customModule="WalkThrough" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="13.5" width="66" height="66"/>
                                                 <state key="normal" image="Copy"/>
                                             </button>
@@ -158,7 +158,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bre-gl-CV7">
                                         <rect key="frame" x="0.0" y="93" width="178.5" height="92.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-cl-7NL" customClass="CustomButton" customModule="Project_Enigma" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-cl-7NL" customClass="CustomButton" customModule="WalkThrough" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="13" width="66" height="66"/>
                                                 <state key="normal" image="Share"/>
                                             </button>
@@ -184,7 +184,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-xA-7w5">
                                         <rect key="frame" x="0.0" y="185.5" width="179" height="93"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca2-ym-8SY" customClass="CustomButton" customModule="Project_Enigma" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca2-ym-8SY" customClass="CustomButton" customModule="WalkThrough" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="13.5" width="66" height="66"/>
                                                 <state key="normal" image="Insert"/>
                                             </button>
@@ -210,7 +210,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="77z-tJ-r1A">
                                         <rect key="frame" x="0.0" y="278.5" width="179" height="92.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK2-5L-x4W" customClass="CustomButton" customModule="Project_Enigma" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK2-5L-x4W" customClass="CustomButton" customModule="WalkThrough" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="13" width="66" height="66"/>
                                                 <state key="normal" image="Delete"/>
                                             </button>
@@ -254,7 +254,7 @@
         <!--Walkthrough Encrypt View Controller-->
         <scene sceneID="MQV-Io-iGv">
             <objects>
-                <viewController storyboardIdentifier="EncryptVC" id="8W6-dd-gUG" customClass="WalkthroughEncryptViewController" customModule="Project_Enigma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EncryptVC" id="8W6-dd-gUG" customClass="WalkthroughEncryptViewController" customModule="WalkThrough" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xzh-aI-NLC">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,7 +282,7 @@
         <!--Walkthrough Decrypt View Controller-->
         <scene sceneID="nEC-jJ-3N3">
             <objects>
-                <viewController storyboardIdentifier="DecryptVC" id="VvE-dh-XFi" customClass="WalkthroughDecryptViewController" customModule="Project_Enigma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DecryptVC" id="VvE-dh-XFi" customClass="WalkthroughDecryptViewController" customModule="WalkThrough" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZJN-UD-5J1">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

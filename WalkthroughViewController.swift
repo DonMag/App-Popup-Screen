@@ -36,12 +36,14 @@ class WalkthroughViewController: UIViewController {
         
         nextBtn.layer.cornerRadius = nextBtn.frame.height / 2
         
-        let storyboard = UIStoryboard(name: "ExtraViewControllers", bundle: nil)
-        
-        let walkthroughPageVC = storyboard.instantiateViewController(withIdentifier: "WalkthroughPageVC") as! WalkthroughPageViewController
-//        walkthroughPageVC = (storyboard.instantiateViewController(withIdentifier: "WalkthroughPageVC") as! WalkthroughPageViewController)
-        delegate = walkthroughPageVC
-    
+		
+		// don't do this - it creates a NEW WalkthroughPageViewController
+		// which is NOT the WalkthroughPageViewController that is loaded into the ContainerView
+		// instead, get a reference to WalkthroughPageViewController in prepare(for segue:...)
+//		let storyboard = UIStoryboard(name: "ExtraViewControllers", bundle: nil)
+//		let walkthroughPageVC = storyboard.instantiateViewController(withIdentifier: "WalkthroughPageVC") as! WalkthroughPageViewController
+//		delegate = walkthroughPageVC
+		
     }
     
     override func viewDidLayoutSubviews() {
@@ -93,15 +95,13 @@ class WalkthroughViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//		if segue.identifier == "EmbeddedSegue" {
+			if let vc = segue.destination as? WalkthroughPageViewController {
+				self.delegate = vc
+			}
+//		}
+	}
 
 }
 
