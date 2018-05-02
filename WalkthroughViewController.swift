@@ -96,11 +96,9 @@ class WalkthroughViewController: UIViewController {
     
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//		if segue.identifier == "EmbeddedSegue" {
-			if let vc = segue.destination as? WalkthroughPageViewController {
-				self.delegate = vc
-			}
-//		}
+		if let vc = segue.destination as? WalkthroughPageViewController {
+			self.delegate = vc
+		}
 	}
 
 }
